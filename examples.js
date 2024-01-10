@@ -109,3 +109,24 @@ for (let i = 0; i < bills.length; i++) {
 console.log(`bills: ${bills}
   tips: ${tips}
   total: ${totals}`);
+//devloper challenge 1
+//-how to print arr of number  and give days
+//create a function then give arr as arguments.
+// arr = [12, 5, -5, 0, 4];
+// const printForcast = function (arr) {
+//   for (const i in arr) {
+//     console.log(`...${arr[i]}celcius in ${Number(i) + 1} days `);
+//   }
+// };
+// printForcast(arr);
+const data1 = [17, 21, 23];
+const data2 = [12, 5, -5, 0, 4];
+const printForcast = function (arr) {
+  let str = "";
+  for (const i in arr) {
+    str = str + `...${arr[i]} c in ${Number(i) + 1} days`;
+    console.log(`...${arr[i]}celcius in ${Number(i) + 1} days `);
+  }
+  console.log(str);
+};
+printForcast(data1);
